@@ -26,11 +26,14 @@ public class animationScript : MonoBehaviour
         Debug.Log("*********");
         anim.SetBool("isTalking", true);
         source.PlayOneShot(clip);
+        // anim.SetBool("isTalking", false);
     }
 
     // Update is called once per frame
     void Update()
     {
-        
+        if (!source.isPlaying) {
+            anim.SetBool("isTalking", false);
+        }
     }
 }
