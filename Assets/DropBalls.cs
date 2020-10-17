@@ -21,7 +21,7 @@ public class DropBalls : MonoBehaviour
 
      if (Input.GetMouseButton(0)) {
      	
-     	posAdd = new Vector3(Random.Range(-0.09f, 0.09f), Random.Range(-0.06f, 0.06f), Random.Range(-0.06f, 0.06f));
+     	posAdd = new Vector3(Random.Range(-0.1f, 0.1f), Random.Range(-0.06f, 0.06f), Random.Range(-0.06f, 0.06f));
 
      	Instantiate(ball, startPosRot.position+posAdd, startPosRot.rotation);
      }   
